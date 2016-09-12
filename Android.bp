@@ -188,6 +188,7 @@ RES_DIRS = [
     "java/com/android/dialer/historyitemactions/res",
     "java/com/android/dialer/interactions/res",
     "java/com/android/dialer/lettertile/res",
+    "java/com/android/dialer/lookup/res",
     "java/com/android/dialer/main/impl/bottomnav/res",
     "java/com/android/dialer/main/impl/res",
     "java/com/android/dialer/main/impl/toolbar/res",
