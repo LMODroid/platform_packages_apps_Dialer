@@ -173,6 +173,7 @@ RES_DIRS = [
     "java/com/android/dialer/calllog/ui/res",
     "java/com/android/dialer/calllogutils/res",
     "java/com/android/dialer/callrecord/res",
+    "java/com/android/dialer/callstats/res",
     "java/com/android/dialer/clipboard/res",
     "java/com/android/dialer/common/preference/res",
     "java/com/android/dialer/common/res",
