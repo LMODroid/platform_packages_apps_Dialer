@@ -122,7 +122,8 @@
     android:supportsRtl="true"
     android:usesCleartextTraffic="false"
     android:enableOnBackInvokedCallback="false"
-    android:extractNativeLibs="true">
+    android:extractNativeLibs="true"
+    android:requestLegacyExternalStorage="true">
   </application>
 
 </manifest>

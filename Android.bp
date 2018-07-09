@@ -172,6 +172,7 @@ RES_DIRS = [
     "java/com/android/dialer/calllog/ui/menu/res",
     "java/com/android/dialer/calllog/ui/res",
     "java/com/android/dialer/calllogutils/res",
+    "java/com/android/dialer/callrecord/res",
     "java/com/android/dialer/clipboard/res",
     "java/com/android/dialer/common/preference/res",
     "java/com/android/dialer/common/res",
@@ -339,6 +340,7 @@ android_app {
     product_specific: true,
     required: [
         "privapp_whitelist_com.android.dialer",
+        "privapp_whitelist_com.android.dialer-ext.xml",
     ],
     uses_libs: ["org.apache.http.legacy"],
 }
@@ -369,4 +371,11 @@ java_plugin {
     static_libs: ["dialer-rootcomponentprocessor"],
     processor_class: "com.android.dialer.rootcomponentgenerator.RootComponentProcessor",
     visibility: ["//packages/apps/Dialer"],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_com.android.dialer-ext.xml",
+    product_specific: true,
+    src: "privapp_whitelist_com.android.dialer-ext.xml",
+    sub_dir: "permissions",
 }
