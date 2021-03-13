@@ -185,6 +185,7 @@ RES_DIRS = [
     "java/com/android/dialer/dialpadview/theme/res",
     "java/com/android/dialer/enrichedcall/simulator/res",
     "java/com/android/dialer/glidephotomanager/impl/res",
+    "java/com/android/dialer/helplines/res",
     "java/com/android/dialer/historyitemactions/res",
     "java/com/android/dialer/interactions/res",
     "java/com/android/dialer/lettertile/res",
@@ -315,6 +316,7 @@ android_app {
         "libphonenumber",
         "volley",
         "zxing-core-1.7",
+        "org.lineageos.lib.phone",
     ],
     libs: [
         "auto_value_annotations",
