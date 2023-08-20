@@ -1078,7 +1078,7 @@ public class InCallPresenter implements CallList.Listener, AudioModeProvider.Aud
           return;
       }
 
-      SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+      SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context.createDeviceProtectedStorageContext());
       if (prefs.getBoolean("smart_mute", false)) {
           TelecomUtil.silenceRinger(context);
       }
