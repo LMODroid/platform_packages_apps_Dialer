@@ -39,7 +39,7 @@ public final class ContactDisplayPreferencesImpl implements ContactDisplayPrefer
     this.appContext = appContext;
     // @Unencrypted preference would be a better choice, but Android Preference only supports the
     // default file. Stub should be used instead when device is locked.
-    this.sharedPreferences = PreferenceManager.getDefaultSharedPreferences(appContext);
+    this.sharedPreferences = PreferenceManager.getDefaultSharedPreferences(appContext.createDeviceProtectedStorageContext());
     displayOrderKey = appContext.getString(R.string.display_options_view_names_as_key);
     sortOrderKey = appContext.getString(R.string.display_options_sort_list_by_key);
   }

@@ -83,7 +83,7 @@ public class ThemeColorManager {
       backgroundColorMiddle = context.getColor(R.color.incall_background_gradient_middle);
       backgroundColorBottom = context.getColor(R.color.incall_background_gradient_bottom);
       backgroundColorSolid = context.getColor(R.color.incall_background_multiwindow);
-      SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+      SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context.createDeviceProtectedStorageContext());
       final boolean isHightlightsDisabled = prefs.getBoolean("disable_highlight_color", false);
 
       if (highlightColor != PhoneAccount.NO_HIGHLIGHT_COLOR && !isHightlightsDisabled) {
