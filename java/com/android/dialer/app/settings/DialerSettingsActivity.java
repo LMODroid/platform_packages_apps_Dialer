@@ -113,7 +113,7 @@ public class DialerSettingsActivity extends AppCompatPreferenceActivity {
 
     if (showSensorOptions()) {
       Header sensorSettingsHeader = new Header();
-      sensorSettingsHeader.titleRes = R.string.sensor_settings_titile;
+      sensorSettingsHeader.titleRes = R.string.sensor_settings_title;
       sensorSettingsHeader.fragment = SensorSettingsFragment.class.getName();
       target.add(sensorSettingsHeader);
     }
