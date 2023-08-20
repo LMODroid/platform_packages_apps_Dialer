@@ -152,7 +152,9 @@ public class CallButtonPresenter
   public void onStateChange(InCallState oldState, InCallState newState, CallList callList) {
     Trace.beginSection("CallButtonPresenter.onStateChange");
     CallRecorder recorder = CallRecorder.getInstance();
-    boolean isEnabled = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(context.getString(R.string.auto_call_recording_key), false);
+    boolean isEnabled = PreferenceManager.getDefaultSharedPreferences(
+                context.createDeviceProtectedStorageContext()
+                ).getBoolean(context.getString(R.string.auto_call_recording_key), false);
 
     if (call != null) {
       call.removeListener(this);
