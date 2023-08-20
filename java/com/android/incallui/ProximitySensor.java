@@ -67,7 +67,7 @@ public class ProximitySensor
       @NonNull AccelerometerListener accelerometerListener) {
     Trace.beginSection("ProximitySensor.Constructor");
 
-    mPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+    mPrefs = PreferenceManager.getDefaultSharedPreferences(context.createDeviceProtectedStorageContext());
     final boolean mIsProximitySensorDisabled = mPrefs.getBoolean(PREF_KEY_DISABLE_PROXI_SENSOR, false);
 
     powerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);

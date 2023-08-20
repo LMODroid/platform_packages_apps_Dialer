@@ -25,6 +25,7 @@ public class SensorSettingsFragment extends PreferenceFragment {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    getPreferenceManager().setStorageDeviceProtected();
     addPreferencesFromResource(R.xml.sensor_settings);
   }
 }
